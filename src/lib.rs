@@ -1,15 +1,10 @@
-mod adder;
-mod divider;
-mod multiplier;
-mod subtracter;
+pub mod adder;
+pub mod categories;
+pub mod divider;
+pub mod multiplier;
+pub mod subtracter;
 
-pub fn is_odd(n: usize) -> bool {
-    n % 2 == 1
-}
-
-pub fn is_even(n: usize) -> bool {
-    n % 2 == 0
-}
+pub use categories::{is_even, is_odd};
 
 #[cfg(test)]
 mod tests {
@@ -29,21 +24,21 @@ mod tests {
 
     #[test]
     fn test_adder() {
-        assert_eq!(adder::add_2992_to(2992), 5984);
+        assert_eq!(adder::add_22_to(22), 44);
     }
 
     #[test]
     fn test_divider() {
-        assert_eq!(divider::floor_divide_by_2992(5984), 2);
+        assert_eq!(divider::floor_divide_by_22(44), 2);
     }
 
     #[test]
     fn test_subtracter() {
-        assert_eq!(subtracter::subtract_2992_from(5984), 2992);
+        assert_eq!(subtracter::subtract_22_from(44), 22);
     }
 
     #[test]
     fn test_multiplier() {
-        assert_eq!(multiplier::multiply_2992_and(2), 5984);
+        assert_eq!(multiplier::multiply_22_and(2), 44);
     }
 }

@@ -1,7 +1,10 @@
 [package]
 name = "is_odd"
 version = "0.1.0"
+authors = ["Pranav Balaji Pooruli"]
 edition = "2021"
+description = "A library for categorizing and operating on integers"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
