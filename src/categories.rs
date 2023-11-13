@@ -1,4 +1,4 @@
-//! A module with functions for categorizing numbers
+//! A module for categorizing numbers
 
 /// Checks if `n` is odd
 pub fn is_odd(n: usize) -> bool {
@@ -30,7 +30,7 @@ pub fn is_non_positive(n: isize) -> bool {
     n <= 0
 }
 
-/// Checks if `n` is a non-positive integer (whole number)
+/// Checks if `n` is a non-negative integer (whole number)
 pub fn is_non_negative(n: usize) -> bool {
     true
 }

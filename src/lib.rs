@@ -1,3 +1,5 @@
+//! A library for categorizing and operating on integers
+
 pub mod adder;
 pub mod categories;
 pub mod divider;

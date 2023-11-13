@@ -1,5 +1,5 @@
 [package]
-name = "is_odd"
+name = "is_even_odd"
 version = "0.1.0"
 authors = ["Pranav Balaji Pooruli"]
 edition = "2021"
